@@ -28,11 +28,11 @@ export default function ContactMe() {
   return (
     <div
       id="contact"
-      className="bg-slate-900 py-24 md:py-20 w-full flex flex-col justify-center items-center"
+      className="bg-slate-900 py-24 lg:px-[50px] md:py-20 w-full flex flex-col justify-center items-center lg:flex-row lg:items-start"
     >
-      <div className="mxff-auto max-w-5xl px-6">
-        <div className="text-black text-center">
-          <h2 className="font-bold text-4xl text-white">Get in Touch</h2>
+      <div className="mx-auto max-w-5xl lg:max-w-2xl lg:w-1/2 px-6">
+        <div className="text-black text-center lg:text-start">
+          <h2 className="font-bold text-4xl text-amber-400">Get in Touch</h2>
           <p className="text-gray-500 mt-3">
             Hey there! If you're into disrupting industries, exploring the next
             frontier, or just want to bounce around some big ideas, I'm your
@@ -43,7 +43,7 @@ export default function ContactMe() {
             or ping me on my socials. Let's innovate, collaborate, and make some
             magic happen!
           </p>
-          <div className="flex gap-3 items-center justify-center mt-6 text-gray-500">
+          <div className="flex gap-3 items-center justify-center mt-6 text-gray-500 lg:justify-start">
             <a href="https://twitter.com/home">
               <X />
             </a>
@@ -56,7 +56,7 @@ export default function ContactMe() {
           </div>
         </div>
       </div>
-      <div className="py-16 w-full">
+      <div className="py-16 w-full lg:max-w-2xl lg:py-8">
         <ContactForm />
       </div>
     </div>
@@ -130,7 +130,7 @@ export function ContactForm() {
   return (
     <Form {...form}>
       <form
-        className="space-y-8 flex-shrink-0 max-w-2xl mx-auto px-4"
+        className="space-y-8 flex-shrink-0 max-w-2xl lg:max-w-none lg:w-full mx-auto px-4"
         onSubmit={form.handleSubmit(onSubmit)}
       >
         <div className="flex flex-col justify-between gap-6 proMax:gap-6 proMax:flex-row">
@@ -216,7 +216,7 @@ export function ContactForm() {
           type="submit"
           className="text-black bg-amber-400 sm:bg-amber-500 hover:bg-amber-400 active:scale-95 transition-transform duration-75 w-full"
         >
-          Submit
+          Send
         </Button>
       </form>
     </Form>
