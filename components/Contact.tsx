@@ -94,38 +94,25 @@ export function ContactForm() {
       from_email: values.email,
       message: values.message,
     };
-    if (
-      process.env.NEXT_PUBLIC_SERVICE_ID !== undefined &&
-      process.env.NEXT_PUBLIC_TEMPLATE_ID !== undefined &&
-      process.env.NEXT_PUBLIC_PUBLIC_KEY !== undefined
-    ) {
-      send(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
-        template_params,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
-      ).then(
-        (result) => {
-          console.log(result.status);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-      toast({
-        title: "Confirmation Message",
-        description: "Your message has been sent.",
-        className: "bg-green-700 text-white border-green-700",
-      });
-      form.reset();
-    } else {
-      toast({
-        variant: "destructive",
-        title: "Confirmation Message",
-        description: "Your message has not been sent.",
-      });
-      return;
-    }
+    send(
+      "service_viym6dy",
+      "template_j03wqp9",
+      template_params,
+      "Je9PKxfPjX4fwAsIV"
+    ).then(
+      (result) => {
+        console.log(result.status);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    toast({
+      title: "Confirmation Message",
+      description: "Your message has been sent.",
+      className: "bg-green-700 text-white border-green-700",
+    });
+    form.reset();
   }
   return (
     <Form {...form}>

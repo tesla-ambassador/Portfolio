@@ -11,6 +11,7 @@ Anyways, it's not as flashy cause I wanted to make it as simple as possible.
 
 ### What I learned from this.
 Yes, I did indeed learn something from updating this portfolio file... How to use environment variables in nextjs. It was a pain because I'm used to how they work in nodejs. It thought it was the same thing, just require your dotenv and you have your magic 🤣 lol!
+So, embarassing fact: I didn't need to hide those variables... They can be public cause I can have a public key arrggghhhh. Well, at least I learned how to use environment variables in Next.js. A win's a win. Now to update my contact.jsx file.
 
 ### What I used. 
 - I was heavy on that [Shadcn](https://ui.shadcn.com/docs)
