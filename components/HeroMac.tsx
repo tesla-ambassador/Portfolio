@@ -1,10 +1,9 @@
 import React from "react";
-import { MacbookScroll } from "./acertenity_components/macbook-scroll";
-import Link from "next/link";
+import { MacbookScroll } from "./ui/macbook-scroll";
 
 export function HeroMac() {
   return (
-    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
+    <div className="overflow-hidden bg-[#0B0B0F] w-full">
       <MacbookScroll
         title={
           <span>
@@ -18,7 +17,7 @@ export function HeroMac() {
             className="h-10 w-10 transform -rotate-12 rounded-full"
           />
         }
-        src={`/Screenshot 2024-04-16 at 12.53.23-min.png`}
+        src={`/Screenshot 2025-01-30 at 01.57.23-min.png`}
         showGradient={false}
       />
     </div>

@@ -1,4 +1,4 @@
-import { HoverEffect } from "./acertenity_components/card-hover-effect";
+import { HoverEffect } from "./ui/card-hover-effect";
 
 export function Projects() {
   return (

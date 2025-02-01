@@ -1,19 +1,19 @@
 "use client";
 import Image from "next/image";
 import { NextUIProvider } from "@nextui-org/react";
-import { Hero } from "./Hero";
-import { HeroMac } from "./HeroMac";
-import { HeroMob } from "./HeroMob";
-import Features from "./Features";
-import { Projects } from "./Projects";
-import About from "./AboutMe";
-import ContactMe from "./Contact";
+import { Hero, NewHero } from "../components/Hero";
+import { HeroMac } from "../components/HeroMac";
+import { HeroMob } from "../components/HeroMob";
+import Features from "../components/Features";
+import { Projects } from "../components/Projects";
+import About from "../components/AboutMe";
+import ContactMe from "../components/Contact";
 
 export default function Home() {
   return (
     <NextUIProvider>
       <div className="flex min-h-screen flex-col items-center justify-between">
-        <Hero />
+        <NewHero />
         <div className="hidden lg:block w-full h-full">
           <HeroMac />
         </div>

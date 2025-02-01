@@ -1,5 +1,5 @@
 import React from "react";
-import { Meteors } from "./acertenity_components/meteors";
+import { Meteors } from "./ui/meteors";
 import { GitHub } from "@mui/icons-material";
 
 export function HeroMob() {
