@@ -4,7 +4,7 @@
 
 ### Screenshot.
 
-![]("public/KevinPortfolio.jpeg")
+![](public/kevin-portfolio-screenshot.jpeg)
 
 ### What I have to say.
 
